@@ -51,3 +51,20 @@
         display: block;
     }
 }
+
+.footer {
+    background-color: black;
+    color: white;
+
+    width:100%;
+    display:block;
+}
+
+p::selection{
+    background: #ffbcb5;
+}
+
+h1::selection{
+    background: #d8ffb9;
+}
+
