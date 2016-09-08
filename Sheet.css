@@ -1,3 +1,53 @@
 .nav ul {
     background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    text-align: left;
+    vertical-align: center;
+}
+
+.nav a{
+    display: block;
+    padding-left: 15px;
+    width: auto;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgb(3, 0, 255);
+    display: block;
+}
+
+/*---------------------------------------------------------------------*/
+
+@media screen and (min-width: 650px) {
+    .nav li {
+        width: 120px;
+        display: inline-block;
+        line-height: 35px;
+    }
+
+    .nav > ul > li {
+        text-align: center;
+    }
+
+    .nav > ul > li > a {
+        padding-left: 0;
+    }
+
+    .nav li ul {
+        position: absolute;
+        display: none;
+    }
+
+    .nav li:hover ul {
+        display: block;
+    }
+
+    .nav li ul li {
+        display: block;
+    }
 }
